@@ -1,0 +1,11 @@
+---
+- debug: msg="before include_vars => {{ test_marker }}"
+- name: include vars
+  include_vars: child_vars.yml
+
+- debug: msg="after include_vars => {{ test_marker }}"
+
+- name: include tasks
+  include: tasks.yml
+
+- debug: msg="after include tasks.yml => {{ test_marker }}"

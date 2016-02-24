@@ -1,0 +1,5 @@
+---
+- name: reproduce
+  hosts: all
+  roles:
+    - role: parent
